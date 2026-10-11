@@ -1,0 +1,12 @@
+{
+  "name": "VrijStaan (Next.js)",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "updateContentCommand": "cd web && npm ci",
+  "postAttachCommand": { "server": "cd web && npm run dev" },
+  "portsAttributes": { "3000": { "label": "VrijStaan", "onAutoForward": "openPreview" } },
+  "forwardPorts": [3000],
+  "customizations": {
+    "vscode": { "extensions": ["dbaeumer.vscode-eslint", "bradlc.vscode-tailwindcss", "denoland.vscode-deno"] }
+  }
+}
